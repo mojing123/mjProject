@@ -10,6 +10,7 @@ const cors = require("cors");
 var index = require("./routes/index");
 var users = require("./routes/users");
 var news = require("./routes/news");
+var test = require("./routes/test");
 var cate = require("./routes/cate");
 var upload = require("./routes/upload");
 
@@ -40,6 +41,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", index);
 app.use("/users", users);
 app.use("/news", news);
+app.use("/test", test);
 app.use("/cate", cate);
 app.use("/upload", upload);
 app.use("/comment",comment);
